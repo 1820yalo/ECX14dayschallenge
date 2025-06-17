@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=D, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="messenger-app">
+        <!-- Sidebar Header -->
+         <header class="sidebar-header">
+           
+            <!-- Windows controls -->
+            <div class="window-controls">
+                <div class="window-control close"></div>
+                <div class="window-control minimize"></div>
+                <div class="window-control maximize"></div>
+            </div>
+
+            <!-- Header Content -->
+            <div class="header-content">
+                <h1 class="sidebar-title">
+                    
+                    <!-- Chat Contact -->
+                    <div class="chat-contact">
+                        <div class="avatar">
+                            <img src="/14daysECXchallenge/images/9334178.jpg" alt="User Profile" class="avatar-img">
+                        </div>
+                        <div class="contact-info">
+                            <h2 class="contact-name">Chats</h2>
+                        </div>
+                    </div>
+                </h1>
+
+                
+                <!-- Sidebar Actions -->
+                <div class="sidebar-actions">
+                    <div class="sidebar-actions">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <i class="fas fa-video" style="color: alice"></i>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search Section -->
+            <div class="search-section">
+                <input type="text" class="search-input" placeholder="Search" aria-label="Search contacts">
+            </div>
+        </header>
+
+        <!-- Sidebar Content -->
+        <section class="sidebar-content">
+
+            <nav class="contacts-grid" role="navigation" aria-label="Contact list">
+                <article class="contact-item active">
+                    <div class="contact-avatar">
+                        <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                        <span class="status-indicator"></span>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Babe ❤️</h3>
+                        <p class="contact-status">Okay see ya! ❤️</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                    
+                        <div class="split-avatar">
+                            <img src="./images/375240154_11475205.jpg" alt="User 1" class="split-avatar-img">
+                            <img src="./images/9334178.jpg" alt="User 2" class="split-avatar-img">
+                        </div>
+                    
+                        <span class="status-indicator"></span>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3 class="contact-name">Family Chat</h3>
+                        <p class="contact-status">Designing and developing...</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                        <img src="./images/9334486.jpg" alt="User Profile" class="avatar-img">
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">John Doe</h3>
+                        <p class="contact-status">What's up bro? 🌟</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                        <img src="./images/27470359_7309667.jpg" alt="User Profile" class="avatar-img">
+                        <span class="status-indicator"></span>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Momo Brown</h3>
+                        <p class="contact-status">I'm really busy right now...</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                        <img src="./images/375238347_11475227.jpg" alt="User Profile" class="avatar-img">
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Matilda White</h3>
+                        <p class="contact-status">🚗🚗🚗🚗🚗🚗 🌟</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                        <img src="./images/9434937.jpg" alt="User Profile" class="avatar-img">              
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Kevin Klein</h3>
+                        <p class="contact-status">See ya!</p>
+                    </div>
+                </article>
+                
+                <article class="contact-item">
+                    <div class="contact-avatar">
+                        <img src="./images/375238353_11475206.jpg" alt="User Profile" class="avatar-img">
+                        <span class="status-indicator"></span>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-name">Rebecca Doe</h3>
+                        <p class="contact-status">Hello I'm contacting you...</p>
+                    </div>
+                </article>
+            </nav>
+        </section>
+
+        <!-- Chat Area -->
+        <div class="chat-area">
+
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <!-- Chat Contat -->
+                <div class="chat-contact">
+                    <div class="avatar">
+                        <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                        <span class="status-indicator"></span>
+                    </div>
+                
+                    <div class="contact-info">
+                        <h3 class="contact-name">Babe ❤️</h3>
+                        <p class="contact-status">Active now</p>
+                    </div>
+                </div>
+                <!-- Chat Actions -->
+                <div class="chat-actions">
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-video"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages">
+                <section class="chat-messages" role="log" aria-label="Chat messages">
+                    <article class="message received">
+                    
+                        <div class="message-avatar">
+                            
+                            <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                            
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">How do you like new Messenger design? 😍</div>
+                    </article>
+                
+                    <article class="message received">
+                        <div class="message-avatar">
+                            
+                            <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                            
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">I think it's a huge step for them to use glass morphism for this app! 😋</div>
+                    </article>
+                
+                    <article class="message sent">
+                        <div class="message-content">I love it tbh! 💜</div>
+                    </article>
+                    
+                    <article class="message sent">
+                        <div class="message-content">I'm big fan of the glassmorphism trend so far! Hope there will be more apps like this 😍</div>
+                    </article>
+                
+                    <article class="message received">
+                        <div class="message-avatar">
+                            
+                            <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                            
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">Yeah, me too</div>
+                    </article>
+                
+                    <article class="message received">
+                        <div class="message-avatar">
+                            
+                            <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                            
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">Different topic, what are your plans for today?</div>
+                    </article>
+                    
+                    <article class="message sent">
+                        <div class="message-content">Right now I'm stuck at the office. I'm finishing at 5 PM. You want to grab some drinks? 😋😍</div>
+                    </article>
+                
+                    <article class="message received">
+                        <div class="message-avatar">
+                            
+                            <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                            
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">That's more like it! Gonna pick u up at 7 then</div>
+                    </article>
+                    
+                    <article class="message sent">
+                        <div class="message-content">Okay, see ya! ❤️</div>
+                    </article>
+                </section>        
+            </div>
+
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input">
+            <i class="fa-solid fa-grid-2"></i>
+            
+            <i class="fa-solid fa-camera"></i>
+            
+            <i class="fa-solid fa-image"></i>
+            
+            <i class="fa-solid fa-microphone"></i>
+            
+            <i class="fa-solid fa-face-smile"></i>
+
+            <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="info-panel">
+            <div class="info-header">
+                <div class="info-avatar">
+                    <img src="./images/375240154_11475205.jpg" alt="User Profile" class="avatar-img">
+                    <div class="status-indicator">
+                    </div>
+                </div>
+                <div class="info-contact">
+                    <h3>Babe ❤️</h3>
+                    <p>Active now</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Content -->
+        <div class="info-content">
+            
+            <div class="info-section">
+                <h4>Set up a chat <span class="section-arrow">⌄</span></h4>
+            </div>
+            
+            <div class="info-section">
+                <h4>Privacy & Help <span class="section-arrow">⌄</span></h4>
+            </div>
+            
+            <div class="info-section">
+                <h4>Shared files <span class="section-arrow">⌄</span></h4>
+                <div class="file-grid">
+                    <div class="file-item">
+                        <div class="file-icon pdf">PDF</div>
+                        <div class="file-name">File 2142.pdf</div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon doc">DOC</div>
+                        <div class="file-name">File 2142.doc</div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon csv">CSV</div>
+                        <div class="file-name">File 2142.csv</div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon pdf">PDF</div>
+                        <div class="file-name">File 2142.pdf</div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h4>Shared photos <span class="section-arrow">⌄</span></h4>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
