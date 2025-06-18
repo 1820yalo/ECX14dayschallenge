@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and efficient todo list application to manage your daily tasks">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAFdQTFRFAAAA////gICA/4CA/4CAqqqqv7+/zMzM1dXV29vb4ODg5OTk6Ojo7Ozs7+/v8vLy9PT09vb2+Pj4+fn5+/v7/Pz8/f39/v7+5eXl4eHh2tra19fXz8/PwMDA+flMqQAAAAJ0Uk5T/v6mqd4QAAAA+UlEQVQ4y62T2xKDIAxEg0IQFYRev/r/H1loZ6xUwD59cidikg0JIZzpglMp5Rx8KFU0APLokINwEqgxaHBbhtYwNlyGWj+SYazuQy0fbNhqL6yhk0knQwOjf7AQIRXXwYbZ2sMEHxhDT3cFhoCHUEMb5GRQw/AQCZqQgyVYQGuHCd807y6DnQyWYAKNB1V0Bk5oKBDtg70wZJFrgcYeNDQt0ITZe4HwETLPBWZCbgSm0Egtsf8FSusELvD7Lz4KzAi5FVjg9wt8EJgIwArY6KGF/1dwky/g54v/acBPHngYweMQHsfweQKfp/B5Dp8n8XkanyX+AMnpGjNgAGk+AAAAAElFTkSuQmCC">
+</head>
+<body>
+    <main class="todo-container">
+        <header class="header">
+            <h1>TO-DO List</h1>
+        </header>
+
+        <form class="todo-form" onsubmit="event.preventDefault(); addTask();">
+            <label for="input-box" class="visually-hidden">Enter new task</label>
+            <input type="text" 
+                   class="input-item" 
+                   name="input-box" 
+                   id="input-box" 
+                   placeholder="Add a new task..."
+                   maxlength="100"
+                   aria-label="New task input">
+            <button type="submit" 
+                    id="input-btn" 
+                    aria-label="Add task">
+                Add
+            </button>
+        </form>
+
+        <section class="task-list">
+            <h2>Task list</h2>
+            <ul id="list-container" 
+                aria-label="Todo list"
+                role="list"></ul>
+            <hr>
+            <div class="counter-container">
+                <div id="task-counters" aria-live="polite">
+                    completed: <span id="completed-count">0</span> |
+                    pending: <span id="pending-count">0</span> |
+                    total: <span id="total-count">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>
