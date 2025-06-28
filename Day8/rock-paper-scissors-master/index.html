@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="/rock-paper-scissors-master/style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="flex-column main-container">
+    <!-- Title block -->
+  <section class="title-block flex-row">
+    <ul>
+      <li>Rock</li>
+      <li>Paper</li>
+      <li>Scissors</li>
+      <li>Lizard</li>
+      <li>Spock</li>
+    </ul>
+    <div class="score flex-column">
+      <div class="score-title">Score</div>
+      <div class="score-count"></div>
+    </div>
+  </section>
+
+  <!-- User choice -->
+  <section class="user-choice">
+    <div class="game-card scissors"><img src="/rock-paper-scissors-master/images/icon-scissors.svg" alt=""></div>
+    <div class="game-card paper"><img src="/rock-paper-scissors-master/images/icon-paper.svg" alt=""></div>
+    <div class="game-card rock"><img src="/rock-paper-scissors-master/images/icon-rock.svg" alt=""></div>
+    <div class="game-card lizard"><img src="/rock-paper-scissors-master/images/icon-lizard.svg" alt=""></div>
+    <div class="game-card spock"><img src="/rock-paper-scissors-master/images/icon-spock.svg" alt=""></div>
+  </section>
+
+  <div class="section picked flex-row hidden">
+    <div class="choice flex-column">
+      <p>You picked</p>
+      <div class="user-pick"></div>
+    </div>
+    <div class="result">
+      <div class="title">You lose</div>
+      <button>Play again</button>
+    </div>   
+    <div class="choice flex-column">
+      <p>The house picked</p>
+      <div class="pc-pick"></div>
+    </div> 
+  </div>
+
+  <button class="rules-btn">Rules</button> 
+  <div class="modal-bg"></div>
+  <div class="modal">
+    <span class="close">
+      <img src="/rock-paper-scissors-master/images/icon-close.svg" alt="">
+    </span>
+    <div class="title">Rules</div>
+    <div class="content">
+      <img src="/rock-paper-scissors-master/images/image-rules-bonus.svg" alt="">
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+<script src="/rock-paper-scissors-master/js/script.js"></script>
+</body>
+</html>
