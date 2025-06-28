@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oyeniku Yusuf | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Oyeniku Yusuf</h1>
+    <p>Creative Web Developer & Designer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="about" id="about">
+      <img src="./image/photo_6014626095300720392_x.jpg" alt="Profile Photo">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm a passionate web developer who loves building creative and responsive websites. I specialize in HTML, CSS, and JavaScript, and enjoy turning ideas into beautiful digital experiences.
+      </p>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-preview="preview1">
+                <h3>Project One</h3>
+                <p>A modern landing page for a startup, featuring smooth animations and a clean layout.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-preview" id="preview1">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project One Preview" style="width:100%;border-radius:8px;margin-top:1rem;">
+                <p style="margin-top:0.5rem;">Landing page hero section with animation.</p>
+            </div>
+            <div class="project-card" data-preview="preview2">
+                <h3>Project Two</h3>
+                <p>An interactive photo gallery with filtering and lightbox features.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-preview" id="preview2" style="display:none;">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project Two Preview" style="width:100%;border-radius:8px;margin-top:1rem;">
+                <p style="margin-top:0.5rem;">Photo gallery with filter and lightbox.</p>
+            </div>
+            <div class="project-card" data-preview="preview3">
+                <h3>Project Three</h3>
+                <p>A personal blog platform with markdown support and custom themes.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-preview" id="preview3" style="display:none;">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project Three Preview" style="width:100%;border-radius:8px;margin-top:1rem;">
+                <p style="margin-top:0.5rem;">Blog platform with markdown and themes.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Oyeniku Yusuf. All rights reserved.
+  </footer>
+</body>
+  <script src="script.js"></script>
+</html>
