@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s;
+}
+
+.display {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    padding: clamp(10px, 2vw, 20px);
+    font-size: clamp(1em, 2vw, 1.5em);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.theme-switcher {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Dark theme styles */
+body.dark-mode {
+    background-color: #333;
+}
+
+.calculator.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.display.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.btn.dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+.btn.dark-mode:hover {
+    background-color: #666;
+}
+
+/* Style the numbers container */
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Style the operations container */
+.operations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    gap: 10px;
+}
+
+/* Ensure the equal button is the last in the operations container */
+.operations .btn[data-value="equals"] {
+    grid-row: 6;
+}
